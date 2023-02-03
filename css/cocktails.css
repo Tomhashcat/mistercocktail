@@ -1,0 +1,51 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fceabb, #f8b500);
+    background-size: cover;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    background: url('../images/hero.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card {
+    height: 100%;
+}
+
+.img-force-fluid {
+    width: 100%;
+}
+
+.card .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media screen and (max-width: 768px){
+    .card .card-img-top {
+        height: 30vw;
+    } 
+}
+
+@media screen and (max-width: 576px){
+    .card .card-img-top {
+        height: 70vw;
+    } 
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test d'upload de fichier</h1>
+    <?php if($message) : ?>
+        <?=$message?>
+    <?php endif ?>
+    <form action="" method="POST" enctype="multipart/form-data">
+
+        <label for="image">Photo du cocktail&nbsp;:</label>
+
+        <input type="file" id="image" name="image" accept="image/png, image/jpeg">
+
+        <input type="submit" value="Envoyer le fichier">
+    </form>
+
+</body>
+</html>
